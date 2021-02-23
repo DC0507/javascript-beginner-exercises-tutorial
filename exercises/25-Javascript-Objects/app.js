@@ -26,12 +26,28 @@ function addAllFamilyLuckyNumbers(anArray){
   var sumOfAllLuckyNumbers = 0; //sumOfAllLuckyNumbers is a number, the sum of all lucky numbers.
 
   //To-Do: loop and add; consider nested loops
+  for (let index in family.members){
+      for (let ind in family.members[index].lucky_numbers){
+          sumOfAllLuckyNumbers += family.members[index].lucky_numbers[ind];
+          //console.log(family.members[index].lucky_numbers[ind]);
+      }
+  }
   //Hint: use the anArray variable to get all of the lucky numbers
   
   return sumOfAllLuckyNumbers;
 }
 
 //Enter all your code here:
+family.members[0].lucky_numbers[3] = 33;
+var person3 = {
+    name: "Jimmy",
+    lastname: "Doe",
+    age: 13,
+    gender: "male",
+    lucky_numbers: [1, 2, 3, 4],
+    significant_other: null
+};
+family.members.push(person3);
 
 
 //Do not make changes below:

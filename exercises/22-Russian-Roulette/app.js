@@ -9,6 +9,12 @@ const spinChamber = () => {
 const fireGun = (spinnerPosition) => {
     //if (...) return ("You're dead!");
     //else return ("Keep playing!");
+    if (spinnerPosition==bulletPosition){
+        return "You're dead!";
+    }
+    else{
+        return "Keep playing!";
+    }
 };
 
-//console.log(fireGun(...));
+console.log(fireGun(bulletPosition));

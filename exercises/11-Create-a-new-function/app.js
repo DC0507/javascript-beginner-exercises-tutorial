@@ -2,8 +2,7 @@
 
 // Declare your function here
 function generateRandom(){
-    var result = Math.floor((Math.random() * 9) + 1);
-    return result;
+    return Math.floor(Math.random() * 10);
 }
 
 console.log(generateRandom());
